@@ -63,24 +63,30 @@ public class Main {
                         System.out.println("Что хотите изменить?");
                         String answer3 = in.nextLine();
                         switch (answer3.toLowerCase()) {
+                            case "логин":
+                                System.out.println("Введите новый логин");
+                                user.changeNickName(in.nextLine());
+                            case "пароль":
+                                System.out.println("Введите новый пароль");
+                                user.changePassword(in.nextLine());
                             case "имя":
-                                System.out.println("Введите имя");
+                                System.out.println("Введите новое имя");
                                 user.changeFirstName(in.nextLine());
                                 break;
                             case "фамилию":
-                                System.out.println("Введите фамилию");
+                                System.out.println("Введите новую фамилию");
                                 user.changeSecondName(in.nextLine());
                                 break;
                             case "отчество":
-                                System.out.println("Введите отчество");
+                                System.out.println("Введите новое отчество");
                                 user.changeFatherName(in.nextLine());
                                 break;
                             case "email":
-                                System.out.println("Введите email");
+                                System.out.println("Введите новый email");
                                 user.changeEmail(in.nextLine());
                                 break;
                             case "телефон":
-                                System.out.println("Введите номер телефона");
+                                System.out.println("Введите новый номер телефона");
                                 user.changePhoneNumber(in.nextLine());
                                 break;
                             default:
