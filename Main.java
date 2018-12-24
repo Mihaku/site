@@ -12,8 +12,8 @@ public class Main {
         System.out.println("Введите пароль");
         user.setPassword(in.nextLine());
 
+        //Переопределяем класс у user
         User admin = new Admin();
 
-        user = (Admin) admin;
     }
 }
